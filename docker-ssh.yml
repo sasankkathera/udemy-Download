@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sshtesting:
+    container_name: sshc
+    image: ssht
+    build: 
+      context: Debian
+    networks:
+      - net
+networks:
+  net:
